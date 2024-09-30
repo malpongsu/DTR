@@ -15,7 +15,7 @@
             crossorigin="anonymous"
         />  
 
-        <title> {% block title %}DipCWD Attendance On-Job-Training OJT{% endblock %}</title>
+        <title> {% block title %}Dipolog Cathedral Attendance{% endblock %}</title>
 
 
     </head>
@@ -26,10 +26,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbar">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" id="login" href="/login">Login</a>
-                    <a class="nav-item nav-link" id="signup" href="/sign-up">Sign Up</a>
-                    <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
                     <a class="nav-item nav-link" id="home" href="/">Home</a>
+                    <a class="nav-item nav-link" id="attendance" href="/attendance">Attendance List</a>
+                    <a class="nav-item nav-link" id="add_user" href="/add-user">Add User</a>
+                    <a class="nav-item nav-link" id="user_list" href="/user-list">Master List</a>
+
                 </div>
             </div>
         </nav>
@@ -57,7 +58,9 @@
             type="text/javascript"
             src="{{ url_for('static',filename='index.js') }}"
         ></script>
-    </body>
 
+
+
+    </body>
 
 </html>

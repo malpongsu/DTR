@@ -23,7 +23,7 @@ Master List
             <td>{{ user.id }}</td>
             <td>{{ user.name }}</td>
             <td>{{ user.rfid_tag }}</td>
-            <td>{{ user.date_registered.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+            <td>{{ user.created_at }}</td>
         </tr>
         {% endfor %}
     </tbody>

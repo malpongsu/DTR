@@ -8,7 +8,7 @@ Add User
 <h1>Register New User for RFID</h1><br>
 
 <!-- Form for adding a new user -->
-<form action="/add_user" method="POST">
+<form action="/add-user" method="POST">
     <div class="form-group">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" class="form-control" placeholder="Enter user's name" required>

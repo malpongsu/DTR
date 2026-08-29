@@ -4,7 +4,7 @@ Dipolog Cathedral Attendance
 {% endblock %}
 
 {% block content %}
-<h1>Attendance Tracking</h1>
+<h1>SOCCOM Attendance Tracking</h1>
 
 <!-- Form for RFID attendance entry -->
 <form action="/" method="POST">

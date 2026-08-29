@@ -58,3 +58,11 @@ def test_hid_scanner_prefix_and_enter_are_ignored():
     response = client.post('/attendance', data={'rfid_number': 'RFID:ab12cd34\r'}, follow_redirects=False)
     assert response.status_code == 302
     assert response.headers['Location'].endswith('/attendance')
+
+
+def test_app_uses_database_url_from_environment(monkeypatch):
+    monkeypatch.setenv('DATABASE_URL', '/tmp/vercel-attendance.db')
+
+    app = create_app()
+
+    assert app.config['DATABASE'] == '/tmp/vercel-attendance.db'
